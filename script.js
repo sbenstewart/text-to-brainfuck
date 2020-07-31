@@ -7,7 +7,7 @@ $("#bf").keypress(function (event) {
 });
 
 function copy(value) {
-    const pagelink = `\n\nCreated using: ${document.location.href}`;
+    const pagelink = `\n\n\t Created using: ${document.location.href}`;
     value += pagelink;
     var $temp = $("<input>");
     $("body").append($temp);
