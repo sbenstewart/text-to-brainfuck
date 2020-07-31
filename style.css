@@ -70,6 +70,11 @@ h4 {
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
 }
 
+.uk-form-icon {
+    pointer-events: auto !important;
+    cursor: pointer;
+  }
+
 .uk-mr-custom {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -83,4 +88,8 @@ i.uk-form-icon.cs {
 i.uk-form-icon.ft {
     font-style: initial;
     color: #329cfc !important;
+}
+
+.flip {
+    padding-right: 40px;
 }

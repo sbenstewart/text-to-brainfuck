@@ -6,6 +6,33 @@ $("#bf").keypress(function (event) {
     return isValid(character);
 });
 
+function copy(value) {
+    const pagelink = `\n\nCreated using: ${document.location.href}`;
+    value += pagelink;
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val(value).select();
+    document.execCommand("Copy");
+    $temp.remove();
+    new Noty({
+        theme: 'metroui',
+        text: 'Copied!',
+        timeout: 1500,
+        progressBar: false,
+        type: 'success',
+    }).show();
+}
+
+$("#cpText").click(function(event){
+    const value = textInput.val();
+    copy(value);
+});
+
+$("#bfText").click(function(event){
+    const value = bfInput.val();
+    copy(value);
+});
+
 function isValid(str) {
     return /[+\-\[\]<>.,]/g.test(str);
 }

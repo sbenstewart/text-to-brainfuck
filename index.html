@@ -6,6 +6,9 @@
     <title>The converter</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/css/uikit.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.0/css/font-awesome.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css'>
+    
     <link rel="stylesheet" href="./style.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -32,7 +35,10 @@
                 <div class="uk-mr-custom">
                     <div class="uk-inline">
                         <i class="uk-form-icon cs">Aa</i>
-                        <input id="text" class="uk-input uk-form-width-large text" type="text" placeholder="Text">
+                        <input id="text" class="uk-input uk-form-width-large text flip" type="text" placeholder="Text">
+                        <i id="cpText" class="uk-form-icon uk-form-icon-flip cs">
+                            <i class="fa fa-clone"></i>
+                        </i>
                     </div>
                 </div>
                 <div class="uk-mr-custom arrows">
@@ -44,13 +50,17 @@
                 <div class="uk-mr-custom">
                     <div class="uk-inline">
                         <i class="uk-form-icon ft">++></i>
-                        <input id="bf" class="uk-input uk-form-width-large bf" type="text" placeholder="Brainfuck">
+                        <input id="bf" class="uk-input uk-form-width-large bf flip" type="text" placeholder="Brainfuck">
+                        <i id="bfText" class="uk-form-icon uk-form-icon-flip ft">
+                            <i class="fa fa-clone"></i>
+                        </i>
                     </div>
                 </div>
             </fieldset>
         </form>
     </div>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
     <script src="./script.js" type="module"></script>
 
 </body>
