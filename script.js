@@ -21,6 +21,9 @@ function textToBf() {
     const textTemp = textInput.val();
     const bfTemp = reverseInterpret(textTemp);
     bfInput.val(bfTemp);
+    if (!textTemp) {
+        bfInput.val('');
+    }
 }
 
 function bfToText() {
