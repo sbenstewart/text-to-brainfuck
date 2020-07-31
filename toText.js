@@ -52,7 +52,7 @@ export function interpret(program) {
         switch (program[ipointer]) {
             case '>':
                 if (mpointer == memory.length - 1)
-                /* If we try to access memory beyond what is currently available, expand array */
+                    /* If we try to access memory beyond what is currently available, expand array */
                     memory.push(0, 0, 0, 0, 0);
                 mpointer++;
                 break;

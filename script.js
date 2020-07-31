@@ -1,9 +1,9 @@
-import {interpret,resetState} from './toText.js';
-import {reverseInterpret} from './toBF.js';    
+import { interpret, resetState } from './toText.js';
+import { reverseInterpret } from './toBF.js';
 
-$("#bf").keypress(function(event) {
+$("#bf").keypress(function (event) {
     var character = String.fromCharCode(event.keyCode);
-    return isValid(character);     
+    return isValid(character);
 });
 
 function isValid(str) {
