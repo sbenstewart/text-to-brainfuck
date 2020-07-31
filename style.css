@@ -13,6 +13,10 @@ html,
 body {
     margin: 0px;
     padding: 0px;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
 }
 
 body {
@@ -25,7 +29,8 @@ body {
 }
 
 .uk-form-width-large {
-    width: 350px !important;
+    width: 95vw !important;
+    max-width: 350px;
 }
 
 .uk-form-width-large textarea,
@@ -60,7 +65,7 @@ h4 {
 
 .main-form {
     background: #fff;
-    padding: 40px 50px;
+    padding: 4vh 5vw;
     border-radius: 5px 5px 4px 4px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
 }
