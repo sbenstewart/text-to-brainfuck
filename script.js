@@ -1,4 +1,5 @@
-import {interpret,resetState} from './toText.js';    
+import {interpret,resetState} from './toText.js';
+import {reverseInterpret} from './toBF.js';    
 
 $("#bf").keypress(function(event) {
     var character = String.fromCharCode(event.keyCode);
@@ -17,12 +18,9 @@ function roundNum(num) {
 }
 
 function textToBf() {
-    const textTemp = parseFloat(textInput.val());
-    const bfTemp = (textTemp * 9 / 5) + 32;
-    bfInput.val(roundNum(bfTemp));
-    if (isNaN(bfInput.val())) {
-        bfInput.val('');
-    }
+    const textTemp = textInput.val();
+    const bfTemp = reverseInterpret(textTemp);
+    bfInput.val(bfTemp);
 }
 
 function bfToText() {
@@ -37,7 +35,7 @@ function bfToText() {
 
 function convert() {
     textInput.keyup(() => {
-        //textToBf()
+        textToBf()
     });
     bfInput.keyup(() => {
         bfToText()
