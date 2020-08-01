@@ -7,8 +7,8 @@ $("#bf").keypress(function (event) {
 });
 
 function copy(value) {
-    const pagelink = `Created using: ${document.location.href}`;
-    value += ' ' + pagelink;
+    //const pagelink = `Created using: ${document.location.href}`;
+    //value += ' ' + pagelink;
     var $temp = $("<input>");
     $("body").append($temp);
     $temp.val(value).select();
