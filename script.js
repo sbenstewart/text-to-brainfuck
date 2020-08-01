@@ -33,6 +33,14 @@ $("#bfText").click(function(event){
     copy(value);
 });
 
+$("#explainText").click(function(event){
+    window.open('https://en.wikipedia.org/wiki/Text', 'name');
+});
+
+$("#explainBF").click(function(event){
+    window.open('https://en.wikipedia.org/wiki/Brainfuck', 'name');
+});
+
 function isValid(str) {
     return /[+\-\[\]<>.,]/g.test(str);
 }
