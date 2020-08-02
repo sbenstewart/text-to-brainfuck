@@ -28,10 +28,14 @@ export function reverseInterpret(input) {
         out.append(']');
         return out.value;
     }
+    
+      function encode_utf8(s) {
+        return unescape(encodeURIComponent(s));
+      }
 
     var output = StringBuilder();
 
-    var charArray = input.split('').map((c) => c.charCodeAt(0));
+    var charArray = encode_utf8(input).split('').map((c) => c.charCodeAt(0));
     var baseTable = charArray.map((c) => Math.round(c / 10) * 10).filter((i, p, s) => s.indexOf(i) === p);
 
     output.append(buildBaseTable(baseTable));

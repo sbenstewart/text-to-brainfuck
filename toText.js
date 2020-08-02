@@ -26,6 +26,10 @@ export function resetState() {
     astack = [];
 }
 
+function decode_utf8(s) {
+    return decodeURIComponent(escape(s));
+  }
+
 function sendOutput(value) {
     output += String.fromCharCode(value);
 }
@@ -101,6 +105,7 @@ export function interpret(program) {
         ipointer++;
 
     }
+    output = decode_utf8(output);
     //console.log(output);
     return output;
 }
