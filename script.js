@@ -23,21 +23,21 @@ function copy(value) {
     }).show();
 }
 
-$("#cpText").click(function(event){
+$("#cpText").click(function (event) {
     const value = textInput.val();
     copy(value);
 });
 
-$("#bfText").click(function(event){
+$("#bfText").click(function (event) {
     const value = bfInput.val();
     copy(value);
 });
 
-$("#explainText").click(function(event){
+$("#explainText").click(function (event) {
     window.open('https://en.wikipedia.org/wiki/Text', 'name');
 });
 
-$("#explainBF").click(function(event){
+$("#explainBF").click(function (event) {
     window.open('https://en.wikipedia.org/wiki/Brainfuck', 'name');
 });
 

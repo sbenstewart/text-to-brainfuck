@@ -28,10 +28,10 @@ export function reverseInterpret(input) {
         out.append(']');
         return out.value;
     }
-    
-      function encode_utf8(s) {
+
+    function encode_utf8(s) {
         return unescape(encodeURIComponent(s));
-      }
+    }
 
     var output = StringBuilder();
 

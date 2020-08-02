@@ -28,7 +28,7 @@ export function resetState() {
 
 function decode_utf8(s) {
     return decodeURIComponent(escape(s));
-  }
+}
 
 function sendOutput(value) {
     output += String.fromCharCode(value);
