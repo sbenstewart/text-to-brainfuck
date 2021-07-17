@@ -52,7 +52,7 @@ function roundNum(num) {
     return Math.round(num * 100) / 100;
 }
 
-function textToBf() {
+function textToBf(e) {
     const textTemp = textInput.val();
     const bfTemp = reverseInterpret(textTemp);
     bfInput.val(bfTemp);
@@ -61,7 +61,7 @@ function textToBf() {
     }
 }
 
-function bfToText() {
+function bfToText(e) {
     resetState();
     const bfTemp = bfInput.val();
     const textTemp = interpret(bfTemp);
@@ -71,13 +71,10 @@ function bfToText() {
     }
 }
 
-function convert() {
-    textInput.keyup(() => {
-        textToBf()
-    });
-    bfInput.keyup(() => {
-        bfToText()
-    });
-}
+textInput.on('input', function() {
+    textToBf()
+});
 
-convert();
+bfInput.on('input', function() {
+    bfToText()
+});
