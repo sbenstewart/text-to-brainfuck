@@ -97,4 +97,12 @@ i.uk-form-icon.ft {
 .p {
     margin: 1vh 1vw 1vw 1vh;
     opacity: 0.5;
-  }
+}
+
+#delete {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 15px;
+    -webkit-text-stroke: 2px white;
+}

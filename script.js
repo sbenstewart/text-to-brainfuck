@@ -78,3 +78,8 @@ textInput.on('input', function() {
 bfInput.on('input', function() {
     bfToText()
 });
+
+$("#delete").click(function(ev){
+    textInput.val('');
+    bfInput.val('');
+})
