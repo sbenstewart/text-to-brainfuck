@@ -1,10 +1,9 @@
 import { interpret, resetState } from './toText.js';
 import { reverseInterpret } from './toBF.js';
 
-$("#bf").keypress(function (event) {
-    var character = String.fromCharCode(event.keyCode);
-    return isValid(character);
-});
+$("#bf").on("paste keyup",function(e){
+    $(this).val(this.value.replace(/[^+\-\[\]<>.,]*/g,''))
+ })
 
 function copy(value) {
     //const pagelink = `Created using: ${document.location.href}`;
@@ -40,10 +39,6 @@ $("#explainText").click(function (event) {
 $("#explainBF").click(function (event) {
     window.open('https://en.wikipedia.org/wiki/Brainfuck', 'name');
 });
-
-function isValid(str) {
-    return /[+\-\[\]<>.,]/g.test(str);
-}
 
 const textInput = $('#text');
 const bfInput = $('#bf');
