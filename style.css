@@ -1,15 +1,17 @@
 html {
     width: 100%;
     height: 100%;
-    display: table;
+    background-color: #f8f8f8;
+    display: inline-block;
 }
 
 body {
     width: 100%;
-    display: table-cell;
-}
+    display:inline-block;
+    
+} 
 
-html,
+ html,
 body {
     margin: 0px;
     padding: 0px;
@@ -17,11 +19,12 @@ body {
     bottom:0px;
     left:0px;
     right:0px;
-}
+   
+}     
 
 body {
-    background: #f8f8f8;
-}
+    background-color: #f8f8f8;
+} 
 
 .hello {
     margin-top: 15px;
@@ -29,7 +32,7 @@ body {
 }
 
 .uk-form-width-large {
-    width: 90vw !important;
+    width: 90vw ;
     max-width: 350px;
 }
 
@@ -68,8 +71,19 @@ h4 {
     padding: 4vh 3vw;
     border-radius: 5px 5px 4px 4px;
     box-shadow: 0 2px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 100px;
+   
 }
-
+@media screen and (max-height:500px){
+ .main-form{
+  display: inline-block;
+  margin: 60px 0;
+  }
+  html,
+body{
+    margin-bottom: 120px;
+}
+}
 .uk-form-icon {
     pointer-events: auto !important;
     cursor: pointer;
@@ -84,12 +98,13 @@ i.uk-form-icon.cs {
     font-style: initial;
     color: #fa7676 !important;
 }
-
 i.uk-form-icon.ft {
     font-style: initial;
     color: #329cfc !important;
 }
-
+.uk-container{
+    margin-bottom: 40px;
+}
 .flip {
     padding-right: 40px;
 }
@@ -98,6 +113,7 @@ i.uk-form-icon.ft {
     margin: 1vh 1vw 1vw 1vh;
     opacity: 0.5;
 }
+
 
 #delete {
     position: absolute;
