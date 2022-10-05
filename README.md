@@ -5,6 +5,10 @@
 
 Text to brainfuck web page. Only for computers. For now.
 
+## About Brainfuck
+
+Brainfuck is an esoteric and Turing complete programming language that consists of only 8 simple commands. The language is quite frustrating to use, due to its extremely minimalist nature. While it isn't meant for practical use, it helps amuse programmers and also challenges the boundaries of computer programming.
+
 ## Prerequisites
 
 To use this website the following is what you'll have to do.
@@ -20,7 +24,7 @@ This website was created because of one frustrated [Ben Stewart](https://sbenste
 
 ## How this ?
 
-The frustrated Ben Stewart being a bit familiar with HTML, just plapyed around with the same to implememnt it.
+The frustrated Ben Stewart being a bit familiar with HTML, just played around with the same to implememnt it.
 
 The tech stuff used are as follows:
 
