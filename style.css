@@ -57,22 +57,24 @@ body {
 .uk-input:focus,
 .uk-select:focus,
 .uk-textarea:focus {
-    outline: none;
+    outline:none;
     background-color: #fff;
     color: #666;
 }
 
 .uk-input.text:focus {
-    border-color: #fa7676;
+    border-color: #9b00b3 ;
 }
 
 .uk-input.bf:focus {
-    border-color: #329cfc;
+    border-color: #00a1ad;
 }
 
 .uk-h4,
 h4 {
     margin-bottom: 0;
+    font-family: 'Rubik Dirt', cursive;
+    font-size: 32px;
 }
 
 .main-form {
@@ -97,7 +99,9 @@ body{
     pointer-events: auto !important;
     cursor: pointer;
   }
-
+#delete {
+    cursor: pointer; 
+}
 .uk-mr-custom {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -105,11 +109,11 @@ body{
 
 i.uk-form-icon.cs {
     font-style: initial;
-    color: #fa7676 !important;
+    color:  #9b00b3 !important;
 }
 i.uk-form-icon.ft {
     font-style: initial;
-    color: #329cfc !important;
+    color: #00a1ad !important;
 }
 .uk-container{
     margin-bottom: 40px;
@@ -121,6 +125,7 @@ i.uk-form-icon.ft {
 .p {
     margin: 1vh 1vw 1vw 1vh;
     opacity: 0.5;
+    font-family: 'Titan One', cursive;
 }
 
 
