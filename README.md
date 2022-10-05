@@ -3,8 +3,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/7a1d13b2-d7d8-484a-90c7-efdeb1148732/deploy-status)](https://app.netlify.com/sites/text2brainfuck/deploys)
 ![GitHub repo size](https://img.shields.io/github/repo-size/sbenstewart/text-to-brainfuck)
 
-Text to brainfuck web page. Only for computers. For now.
-
 ## About Brainfuck
 
 Brainfuck is an esoteric and Turing complete programming language that consists of only 8 simple commands. The language is quite frustrating to use, due to its extremely minimalist nature. While it isn't meant for practical use, it helps amuse programmers and also challenges the boundaries of computer programming.
