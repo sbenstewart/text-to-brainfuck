@@ -99,9 +99,7 @@ body{
     pointer-events: auto !important;
     cursor: pointer;
   }
-#delete {
-    cursor: pointer; 
-}
+
 .uk-mr-custom {
     margin-top: 5px;
     margin-bottom: 5px;
@@ -135,4 +133,5 @@ i.uk-form-icon.ft {
     right: 0px;
     padding: 15px;
     -webkit-text-stroke: 2px white;
+    cursor: pointer; 
 }
